@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>关于我</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="./static/css/me.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./static/css/szgotop.css" />
+    <script type="text/javascript" src="./static/js/szgotop.js"></script>
 </head>
 <body>
 
@@ -14,11 +19,11 @@
         <div class="ui container">
             <div class="ui inverted secondary stackable menu">
                 <h2 class="ui teal header item">Y&H</h2>
-                <a href="./" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
-                <a href="./types" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
-                <a href="./tags" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
-                <a href="./archives" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
-                <a href="./about" class="active m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+                <a href="./index.html" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="./types.html" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="./tags.html" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="./archives.html" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+                <a href="./about.html" class="active m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
                 <div class="right item m-mobile-hide">
                     <div class="ui icon inverted transparent input">
                         <input type="text" placeholder="Search....">
@@ -119,9 +124,6 @@
             <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2021 - 2022 Y&H Designed by Y&H</p>
         </div>
     </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <script>
         $('.menu.toggle').click(function(){
             $('.m-item').toggleClass('m-mobile-hide');

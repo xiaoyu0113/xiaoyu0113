@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>博客管理</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="../static/css/me.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/szgotop.css" />
+    <script type="text/javascript" src="../static/js/szgotop.js"></script>
 </head>
 <body>
 
@@ -14,9 +19,9 @@
         <div class="ui container">
             <div class="ui inverted secondary stackable menu">
                 <h2 class="ui teal header item">管理后台</h2>
-                <a href="#" class="active m-item item m-mobile-hide"><i class="home icon"></i>博客</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="./blogs.html" class="active m-item item m-mobile-hide"><i class="home icon"></i>博客</a>
+                <a href="../types.html" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="../tags.html" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
                 <div class="right m-item m-mobile-hide menu">
                     <div class="ui dropdown item">
                         <div class="text">
@@ -39,8 +44,8 @@
     <div class="ui attached pointing menu">
         <div class="ui container">
             <div class="right menu">
-                <a href="#" class="item">发布</a>
-                <a href="#" class="teal active item">列表</a>
+                <a href="./blogs-input.html" class="item">发布</a>
+                <a href="./blogs.html" class="teal active item">列表</a>
             </div>
         </div>
     </div>
@@ -225,8 +230,6 @@
         </div>
     </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <script>
         $('.menu.toggle').click(function(){
             $('.m-item').toggleClass('m-mobile-hide');
